@@ -511,3 +511,131 @@ img {
     left: -220px;
   }
 }
+
+/*SECTION TRABAJO*/
+
+.trabajos {
+  margin-top: 80px;
+  padding-inline: 12px;
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.img-trabajos {
+  display: none;
+}
+
+.deco-trabajos {
+  display: none;
+}
+
+.trabajos-main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  max-width: 300px;
+  margin-inline: auto;
+}
+
+.trabajos-main-content > span {
+  text-transform: uppercase;
+  color: var(--main-color);
+  font-weight: 700;
+  max-width: 250px;
+  text-align: center;
+}
+
+.logo-trabajos {
+  width: 92px;
+  height: 92px;
+}
+.trabajos-main-content > p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.trabajos-main-content > .btn-secondary {
+  margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .img-trabajos {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 60px;
+    width: 70%;
+    height: 500px;
+  }
+  .trabajos {
+    height: 500px;
+    padding-inline: 24px;
+  }
+  .trabajos-main-content {
+    padding-top: 20px;
+    position: relative;
+    z-index: 2;
+    background: var(--main-white);
+    align-self: end;
+    margin-inline: 0;
+    top: 10px;
+    height: calc(100% - 20px);
+    box-shadow: 1px 1px 20px #00000065;
+    border-radius: 4px;
+    padding-inline: 8px;
+    max-width: 350px;
+  }
+  .trabajos-main-content > span {
+    font-size: 18px;
+  }
+  .trabajos-main-content > p {
+    font-size: 16px;
+  }
+  .deco-trabajos {
+    display: flex;
+    position: absolute;
+    left: 30px;
+    top: 0;
+    width: 20px;
+    height: 500px;
+    writing-mode: vertical-lr;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(180deg);
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1024px) {
+  .trabajos,
+  .img-trabajos,
+  .deco-trabajos {
+    height: 550px;
+  }
+  .trabajos-main-content {
+    right: 80px;
+  }
+}
+
+@media (min-width: 1240px) {
+  .logo-trabajos {
+    height: 120px;
+    width: 120px;
+  }
+  .trabajos,
+  .img-trabajos,
+  .deco-trabajos {
+    height: 600px;
+  }
+  .trabajos-main-content {
+    right: 120px;
+  }
+}
