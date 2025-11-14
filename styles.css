@@ -334,3 +334,180 @@ img {
     font-size: 14px;
   }
 }
+
+/*SECTION SWIPER / TABLAS*/
+
+.tablas {
+  padding-inline: 12px;
+  padding-top: 80px;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.swiper-slide {
+  width: 100%;
+  display: grid;
+  gap: 12px;
+}
+
+.swiper-slide header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.nombre-tabla {
+  text-transform: uppercase;
+  font-size: 92px;
+}
+
+.sub-tabla {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 32px;
+  font-style: italic;
+  margin-left: 20px;
+  position: relative;
+  top: -40px;
+}
+
+.img-slide {
+  height: 550px;
+  max-width: 300px;
+  margin-inline: auto;
+  filter: drop-shadow(5px 5px 20px #00000093);
+}
+
+.about-slide {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.about-slide span {
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.about-slide p {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.btn-secondary {
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  width: fit-content;
+  align-self: start;
+  padding-inline: 32px;
+  padding-block: 6px;
+  span {
+    font-weight: 600;
+    color: var(--main-black);
+  }
+}
+
+.tabla-desktop {
+  display: none;
+}
+
+.listado-tablas {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .tablas {
+    padding-inline: 24px;
+  }
+  .swiper {
+    display: none;
+  }
+  .tabla-desktop {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 1fr 200px;
+    gap: 0;
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  .tabla-desktop header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: -180px;
+  }
+  .nombre-tabla {
+    font-size: 124px;
+  }
+  .sub-tabla {
+    margin-left: 70px;
+  }
+  .img-slide {
+    grid-column-start: 1;
+    grid-row: 1 / span 3;
+  }
+
+  .about-slide {
+    gap: 16px;
+  }
+  .about-slide span {
+    font-size: 18px;
+  }
+  .about-slide p {
+    font-size: 16px;
+  }
+  .btn-secondary span {
+    font-size: 16px;
+  }
+
+  .listado-tablas {
+    list-style-type: none;
+    flex-wrap: wrap;
+    width: 100%;
+    display: flex;
+  }
+  .listado-tablas li {
+    min-width: 20%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Dead Stock", sans-serif;
+    flex: 1;
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: 1024px) {
+  .tablas {
+    padding-inline: 36px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  .listado-tablas {
+    grid-column-start: 1;
+  }
+  .listado-tablas li {
+    min-width: 50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .tablas {
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .listado-tablas li {
+    font-size: 64px;
+  }
+  .tabla-desktop header {
+    left: -220px;
+  }
+}
