@@ -30,6 +30,29 @@ img {
   font-family: "Dead Stock";
 }
 
+/*BOTONES PRINCIPALES*/
+
+button {
+  border: 2px solid var(--main-color);
+  border-radius: 4px;
+  padding-block: 6px;
+  padding-inline: 24px;
+  width: fit-content;
+  span {
+    color: var(--main-black);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+}
+
+.btn-principal {
+  background: var(--main-color);
+}
+
+.btn-secondary {
+  background: transparent;
+}
+
 /*NAVEGACION PRINCIPAL*/
 
 .header-principal {
@@ -169,16 +192,6 @@ img {
       font-weight: 500;
     }
   }
-  .btn-nav-desktop {
-    border: 2px solid var(--main-color);
-    border-radius: 4px;
-    padding-block: 6px;
-    padding-inline: 14px;
-    span {
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-  }
   .btn-nav-mobile {
     display: none;
   }
@@ -251,18 +264,6 @@ img {
 .hero p {
   text-align: center;
   font-weight: 600;
-}
-
-.btn-principal {
-  border: 1px solid var(--main-color);
-  border-radius: 4px;
-  background: var(--main-color);
-  text-transform: uppercase;
-  padding-block: 6px;
-  padding-inline: 20px;
-  span {
-    font-weight: 600;
-  }
 }
 
 .deco-hero {
@@ -387,7 +388,7 @@ img {
   margin-inline: auto;
 }
 
-.about-slide span {
+.about-slide > span {
   color: var(--main-color);
   text-transform: uppercase;
   font-weight: 700;
@@ -396,19 +397,6 @@ img {
 .about-slide p {
   font-size: 14px;
   line-height: 2;
-}
-
-.btn-secondary {
-  border: 2px solid var(--main-color);
-  border-radius: 4px;
-  width: fit-content;
-  align-self: start;
-  padding-inline: 32px;
-  padding-block: 6px;
-  span {
-    font-weight: 600;
-    color: var(--main-black);
-  }
 }
 
 .tabla-desktop {
