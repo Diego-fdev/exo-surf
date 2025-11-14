@@ -754,3 +754,20 @@ img {
     height: 400px;
   }
 }
+
+/*SECTION DECORACION FINAL*/
+
+.img-deco-final {
+  width: 100%;
+  padding-top: 80px;
+  filter: grayscale(1);
+  opacity: 0.3;
+  background-color: #fff;
+  max-height: 280px;
+  overflow: hidden;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+.img-deco-final img {
+  object-fit: contain !important;
+}
