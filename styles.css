@@ -30,6 +30,28 @@ img {
   font-family: "Dead Stock";
 }
 
+.main-section {
+  padding-inline: 12px;
+  margin-top: 80px;
+  max-width: 1440px;
+  margin-inline: auto;
+}
+@media (min-width: 768px) {
+  .main-section {
+    padding-inline: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .main-section {
+    padding-inline: 36px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-section {
+    padding-inline: 0px;
+  }
+}
 /*BOTONES PRINCIPALES*/
 
 button {
@@ -217,19 +239,17 @@ button {
   height: 600px;
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
-  margin-inline: auto;
+  margin-top: 0px;
+  padding-top: 40px;
 }
 
 .main-content-hero {
-  padding-top: 40px;
   gap: 12px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-inline: 12px;
   position: relative;
   z-index: 2;
 }
@@ -291,7 +311,6 @@ button {
     display: none;
   }
   .main-content-hero {
-    padding-inline: 24px;
     align-items: start;
     position: relative;
     z-index: 2;
@@ -328,7 +347,6 @@ button {
     height: 600px;
   }
   .main-content-hero {
-    padding-inline: 36px;
     padding-block: 0px;
   }
   .btn-principal span {
@@ -337,13 +355,6 @@ button {
 }
 
 /*SECTION SWIPER / TABLAS*/
-
-.tablas {
-  padding-inline: 12px;
-  padding-top: 80px;
-  max-width: 1440px;
-  margin-inline: auto;
-}
 
 .swiper-slide {
   width: 100%;
@@ -408,9 +419,6 @@ button {
 }
 
 @media (min-width: 768px) {
-  .tablas {
-    padding-inline: 24px;
-  }
   .swiper {
     display: none;
   }
@@ -476,7 +484,6 @@ button {
 
 @media (min-width: 1024px) {
   .tablas {
-    padding-inline: 36px;
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
@@ -503,11 +510,6 @@ button {
 /*SECTION TRABAJO*/
 
 .trabajos {
-  margin-top: 80px;
-  padding-inline: 12px;
-  width: 100%;
-  max-width: 1440px;
-  margin-inline: auto;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -564,7 +566,6 @@ button {
   }
   .trabajos {
     height: 500px;
-    padding-inline: 24px;
   }
   .trabajos-main-content {
     padding-top: 20px;
@@ -631,13 +632,8 @@ button {
 /*SECTION ABOUT*/
 
 .about {
-  width: 100%;
-  padding-inline: 12px;
-  margin-top: 80px;
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
-  margin-inline: auto;
 }
 
 .main-info-about {
@@ -678,7 +674,6 @@ button {
   .about {
     flex-direction: row;
     gap: 12px;
-    padding-inline: 24px;
   }
   .main-info-about {
     max-width: 350px;
@@ -714,9 +709,6 @@ button {
 }
 
 @media (min-width: 1024px) {
-  .about {
-    padding-inline: 36px;
-  }
   .main-info-about {
     max-width: 500px;
   }
@@ -765,13 +757,11 @@ button {
 .main-footer {
   background: var(--main-black);
   color: var(--main-white);
-  padding-inline: 12px;
-  max-width: 1440px;
-  margin-inline: auto;
-  padding-top: 80px;
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-top: 0px;
+  padding-top: 80px;
 }
 
 .logo-footer {
