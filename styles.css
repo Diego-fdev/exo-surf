@@ -3,7 +3,7 @@
 :root {
   --main-color: #02cfd5;
   --main-black: #000000;
-  --main-white: #ebebeb;
+  --main-white: #dfdfdf;
 }
 
 @font-face {
@@ -18,6 +18,10 @@
   padding: 0px;
   margin: 0px;
   font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--main-white);
 }
 
 img {
@@ -44,12 +48,6 @@ img {
 @media (min-width: 1024px) {
   .main-section {
     padding-inline: 36px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .main-section {
-    padding-inline: 0px;
   }
 }
 /*BOTONES PRINCIPALES*/
@@ -86,6 +84,7 @@ button {
   padding-inline: 12px;
   max-width: 1440px;
   margin-inline: auto;
+  position: relative;
 }
 
 .logo {
@@ -556,6 +555,20 @@ button {
 }
 
 @media (min-width: 768px) {
+  .trabajos {
+    height: 500px;
+    position: relative;
+  }
+  .trabajos::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #fff;
+    z-index: -1;
+  }
   .img-trabajos {
     display: block;
     position: absolute;
@@ -564,18 +577,16 @@ button {
     width: 70%;
     height: 500px;
   }
-  .trabajos {
-    height: 500px;
-  }
+
   .trabajos-main-content {
     padding-top: 20px;
     position: relative;
     z-index: 2;
-    background: var(--main-white);
+    background: #fff;
     align-self: end;
     margin-inline: 0;
-    top: 10px;
-    height: calc(100% - 20px);
+    top: 20px;
+    height: calc(100% - 40px);
     box-shadow: 1px 1px 20px #00000065;
     border-radius: 4px;
     padding-inline: 8px;
@@ -634,6 +645,8 @@ button {
 .about {
   display: flex;
   flex-direction: column;
+  margin-top: 0px;
+  padding-top: 80px;
 }
 
 .main-info-about {
@@ -674,6 +687,7 @@ button {
   .about {
     flex-direction: row;
     gap: 12px;
+    background: #fff;
   }
   .main-info-about {
     max-width: 350px;
@@ -740,16 +754,22 @@ button {
 .img-deco-final {
   width: 100%;
   padding-top: 80px;
-  filter: grayscale(1);
-  opacity: 0.3;
-  background-color: #fff;
   max-height: 280px;
   overflow: hidden;
   max-width: 1440px;
   margin-inline: auto;
+  position: relative;
+  z-index: 2;
 }
 .img-deco-final img {
   object-fit: contain !important;
+  filter: grayscale(1);
+  opacity: 0.3;
+}
+@media (min-width: 768px) {
+  .img-deco-final {
+    background-color: #fff;
+  }
 }
 
 /*SECTION FOOTER*/
@@ -841,3 +861,44 @@ button {
     height: 140px;
   }
 }
+
+/*DECOS FULL PAGE*/
+.deco-top-page {
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  height: 400px;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media (min-width: 768px) {
+  .deco-top-page {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* .deco-bottom-page {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  background-color: red;
+  height: 20px;
+}
+
+.deco-bottom-page .main-deco {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  background-color: #02cfd5;
+} */
