@@ -370,7 +370,12 @@ button {
 
 .nombre-tabla {
   text-transform: uppercase;
-  font-size: 92px;
+  font-size: 72px;
+  transform: scale(1.1, 1.5);
+}
+
+.nombre-tabla::first-letter {
+  font-size: 120px;
 }
 
 .sub-tabla {
@@ -437,7 +442,10 @@ button {
     left: -180px;
   }
   .nombre-tabla {
-    font-size: 124px;
+    font-size: 92px;
+  }
+  .nombre-tabla::first-letter {
+    font-size: 142px;
   }
   .sub-tabla {
     margin-left: 70px;
@@ -885,20 +893,9 @@ button {
   }
 }
 
-/* .deco-bottom-page {
-  position: relative;
-  width: 100%;
-  max-width: 1440px;
-  margin-inline: auto;
-  background-color: red;
-  height: 20px;
+.modal-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+  z-index: 10;
 }
-
-.deco-bottom-page .main-deco {
-  width: 100%;
-  height: 500px;
-  position: absolute;
-  left: 0;
-  bottom: 0px;
-  background-color: #02cfd5;
-} */
