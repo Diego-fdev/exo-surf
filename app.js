@@ -44,3 +44,19 @@ buttonMenuMobile.addEventListener("click", () => {
 buttonCloseMenuMobile.addEventListener("click", () => {
   toggleMenuMobile("cerrar");
 });
+
+/*SWIPER */
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  spaceBetween: 20,
+
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

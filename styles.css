@@ -365,6 +365,38 @@ button {
 
 /*SECTION SWIPER / TABLAS*/
 
+.swiper {
+  width: 100%;
+  padding-top: 20px;
+  position: relative;
+  padding-bottom: 70px;
+}
+
+.swiper-pagination {
+  bottom: 10px !important;
+}
+.swiper-button-prev {
+  left: 100px !important;
+  top: 1078px !important;
+  color: var(--main-black) !important;
+  width: 25px !important;
+  height: 25px !important;
+}
+
+.swiper-button-next {
+  right: 90px !important;
+  top: 1078px !important;
+  color: var(--main-black) !important;
+  width: 25px !important;
+  height: 25px !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: "" !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
 .swiper-slide {
   width: 100%;
   display: grid;
