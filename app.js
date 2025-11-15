@@ -18,9 +18,8 @@ itemsTablas.forEach((tabla) => {
 const buttonMenuMobile = document.querySelector(".btn-nav-mobile");
 const buttonCloseMenuMobile = document.querySelector(".btn-cerrar-modal");
 const menuMobile = document.querySelector(".modal-nav-mobile");
+const linksMenuMobile = document.querySelectorAll(".link-mobile");
 const body = document.querySelector("body");
-
-console.log(body);
 
 const toggleMenuMobile = (accion) => {
   if (accion === "abrir") {
@@ -31,6 +30,12 @@ const toggleMenuMobile = (accion) => {
     body.style.overflow = "auto";
   }
 };
+
+linksMenuMobile.forEach((link) => {
+  link.addEventListener("click", () => {
+    toggleMenuMobile("cerrar");
+  });
+});
 
 buttonMenuMobile.addEventListener("click", () => {
   toggleMenuMobile("abrir");
